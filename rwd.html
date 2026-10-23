@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹사이트</title>
+    <style>
+        * {margin:0; padding: 0;}
+        
+        /* 599px 이하 */
+        @media screen and (max-width:599px) {
+            body {background: #0026ff60;}
+            
+        }
+
+        /* 600~1199px */
+        @media screen and (min-width: 600px) {
+            body {background: #0026ffb4;}
+            h1 {color:#fff}
+            
+        }
+
+        /* 1200px 이상 */
+        @media screen and (min-width: 1200px) {
+            body {background: #0026ff;}
+        }
+                
+    </style>
+</head>
+<body>
+    <header id="header"></header>
+        <h1>제목</h1>
+    <main id="container"></main>
+    <footer id="footer"></footer>
+</body>
+</html>
