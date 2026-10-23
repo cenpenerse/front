@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Orbit&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./rwd.css">
+    <script src="https://code.jquery.com/jquery-4.0.0.js"></script>
 </head>
 <body>
     <header id="header">
@@ -57,5 +58,19 @@
     <footer id="footer">
         <small>&copy; 2026. All Right Reserved by 코딩개발자 </small>
     </footer>
+    <script>
+       let state = 0;
+        $(".viewMenu").on('click', function() {
+            if ( state == 0 ) {
+                $("#gnb").animate({ left: 0 })
+                state = 1;
+            }
+            else {
+                $("#gnb").animate({ left: "-100%" })
+                state = 0;
+            }            
+        })
+    </script>
 </body>
+
 </html>
